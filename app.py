@@ -4,7 +4,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def pagina_inicial():
-    return "Alteração mensagem original recuoerei as aulas de sábado"
+
+    return "Alteração da mensagem original recuperei as aulas de sábado"
 
 if __name__ == '__main__':
     app.run()
