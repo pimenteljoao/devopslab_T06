@@ -14,6 +14,9 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
 
+      - name: Install Requirements
+        run:  pip install flask flask-wtf
+        
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
