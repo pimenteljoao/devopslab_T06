@@ -14,14 +14,15 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
 
+      - name: Install Requirements
+        run:  pip install flask flask-wtf
+        
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
           python-version: '3.8'
 
-      - name: Install Requirements
-        run:  pip install flask flask-wtf
-              
+               
       - name: Unit Test
         run: python -m unittest -v test
 
